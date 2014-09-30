@@ -9,10 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import logic.CommentEntryLogic;
 import model.Comment;
-
-/**
- * Servlet implementation class CommentServlet
- */
 @WebServlet("/Comment")
 public class CommentServlet extends BaseServlet {
 	private static final long serialVersionUID = 1L;
