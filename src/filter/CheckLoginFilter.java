@@ -13,10 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- * Servlet Filter implementation class CheckLoginFilter
- * ログインチェックのフィルター
- */
 @WebFilter(filterName = "CheckLoginFilter",
 urlPatterns = {
 		"/home",
@@ -28,10 +24,6 @@ urlPatterns = {
   }
 )
 public class CheckLoginFilter implements Filter {
-
-	/**
-	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
-	 */
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		//セッション
 		HttpSession session = ((HttpServletRequest)request).getSession();

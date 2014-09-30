@@ -9,9 +9,6 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
-/**
- * Servlet Filter implementation class SetEncordingFilter
- */
 @WebFilter(filterName="SetEncordingFilter", urlPatterns={"/*"})
 public class SetEncordingFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {

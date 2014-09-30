@@ -16,36 +16,24 @@ import javax.servlet.http.HttpSession;
 import model.Account;
 import dao.AccountDAO;
 
-/**
- * Servlet Filter implementation class CheckConditionFilter
- */
 @WebFilter(filterName = "CheckConditionFilter",
-           urlPatterns = {
+				urlPatterns = {
 				"/home",
 				"/Comment",
 				"/ControlUserServlet", 
 				"/entry", 
 				"/ManageUsers",
 				"/RegistUser"
-             }
+				}
 )
 public class CheckConditionFilter implements Filter {
 
-    /**
-     * Default constructor. 
-     */
-    public CheckConditionFilter() {
-    }
+	public CheckConditionFilter() {
+	}
 
-	/**
-	 * @see Filter#destroy()
-	 */
 	public void destroy() {
 	}
 
-	/**
-	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
-	 */
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		try{
 			//操作途中で凍結された時
@@ -70,11 +58,7 @@ public class CheckConditionFilter implements Filter {
 		}
 	}
 
-	/**
-	 * @see Filter#init(FilterConfig)
-	 */
 	public void init(FilterConfig fConfig) throws ServletException {
-		// TODO Auto-generated method stub
 	}
 
 }
