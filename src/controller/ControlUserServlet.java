@@ -25,7 +25,6 @@ public class ControlUserServlet extends HttpServlet {
 		String mode = request.getParameter("mode");
 		int user_id = Integer.parseInt(request.getParameter("user_id"));
 		AccountDAO userCondition = new AccountDAO();
-		
 		if (mode.equals("stop")) {
 			//停止ボタンを押したとき
 			userCondition.chengeUserCondintion(user_id, 0);

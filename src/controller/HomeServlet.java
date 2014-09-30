@@ -30,7 +30,6 @@ public class HomeServlet extends HttpServlet {
 				int conPage = Integer.parseInt(request.getParameter("page"));
 				contributions = cont.contribution(conPage);
 				//セッションスコープに保存
-
 				session.setAttribute("contributionsPage", contributions);
 			}
 		} catch (SQLException | ParseException e) {
