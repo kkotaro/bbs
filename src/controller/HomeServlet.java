@@ -16,23 +16,11 @@ import javax.servlet.http.HttpSession;
 
 import model.Contribution;
 import dao.ContributionDAO;
-/**
- * Servlet implementation class DoLogin
- */
+
 @WebServlet("/home")
 public class HomeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-	public HomeServlet() {
-		super();
-	}
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ContributionDAO cont = new ContributionDAO();
 		Map<Integer, Contribution> contributions = new LinkedHashMap<>();
@@ -52,9 +40,6 @@ public class HomeServlet extends HttpServlet {
 		dispatcher.forward(request, response);
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("jsp/home.jsp");
 		dispatcher.forward(request, response);

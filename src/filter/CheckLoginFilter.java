@@ -33,7 +33,6 @@ public class CheckLoginFilter implements Filter {
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 */
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-		System.out.println("フィルター開始");
 		//セッション
 		HttpSession session = ((HttpServletRequest)request).getSession();
 		if (session.getAttribute("userInfo") == null) { //ログイン時にセッションに格納するユーザ情報が入っていないとき

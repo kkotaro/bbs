@@ -1,93 +1,100 @@
 @CHARSET "UTF-8";
-body{
-	margin:0px;
-	font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-	font-weight:200;
-	border-top:5px solid #7fbfff;
-	background:#f1f1f1;
+
+body {
+	margin: 0px;
+	font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN",
+		Meiryo, sans-serif;
+	font-weight: 200;
+	border-top: 5px solid #7fbfff;
+	background: #f1f1f1;
 }
 
-#wrapper{
-	margin:0 auto;
-	
+#wrapper {
+	margin: 0 auto;
 }
 
-
-#main{
-	width:980px;
-	margin:200px auto;
+#main {
+	width: 980px;
+	margin: 200px auto;
 }
 
-#footer{
-	width:980px;
-	margin:0 auto;
-}
-.login{
-	background:#fff;
-	width:450px;
-	border-radius:3px;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-	box-shadow:rgba(113, 135, 164, 0.22) 0px 0px 15px 2px;
-	-webkit-box-shadow:rgba(113, 135, 164, 0.22) 0px 0px 15px 2px;
-	-moz-box-shadow:rgba(113, 135, 164, 0.22) 0px 0px 15px 2px;
-	border:2px solid #7fbfff;
-	padding:10px 10px 50px 10px;
-	margin:50px auto;
-}
-.login table{
-	margin:0 auto;
-	width:320px;
-	border-collapse:collapse;
-	text-align:left;
-}
-.login th{
-	padding:10px 10px 3px 10px;
-	font-size:22px;
-	color:#4d4d4d;
-}
-.login td{
-	padding:10px 0px;
-}
-.login input[type=text],input[type=password]{
-	width:300px;
-	padding:8px;
-	font-size:18px;
-	color:#747474;
-	border:solid 1px #747474;
-	border-radius:3px;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-	font-family: "Helvetica Neue",Helvetica,Arial;
-}
-.login input[type=text]:focus,input[type=password]:focus{
-	box-shadow:rgba(194, 195, 196, 0.19) 0px 0px 11px 5px inset;
-	-webkit-box-shadow:rgba(194, 195, 196, 0.19) 0px 0px 11px 5px inset;
-	-moz-box-shadow:rgba(194, 195, 196, 0.19) 0px 0px 11px 5px inset;
+#footer {
+	width: 980px;
+	margin: 0 auto;
 }
 
-.login input[type=submit]{
-	padding:8px;
-	color:#fff;
-	border:none;
-	font-size:18px;
-	width:318px;
-	border-radius:3px;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-	background:#3399ff;
-    }
+.login {
+	background: #fff;
+	width: 450px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	box-shadow: rgba(113, 135, 164, 0.22) 0px 0px 15px 2px;
+	-webkit-box-shadow: rgba(113, 135, 164, 0.22) 0px 0px 15px 2px;
+	-moz-box-shadow: rgba(113, 135, 164, 0.22) 0px 0px 15px 2px;
+	border: 2px solid #7fbfff;
+	padding: 10px 10px 50px 10px;
+	margin: 50px auto;
 }
-.login input[type=submit]:hover,
-.login input[type=submit]:focus{
-	background:#7fbfff;
+
+.login table {
+	margin: 0 auto;
+	width: 320px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+.login th {
+	padding: 10px 10px 3px 10px;
+	font-size: 22px;
+	color: #4d4d4d;
+}
+
+.login td {
+	padding: 10px 0px;
+}
+
+.login input[type=text], input[type=password] {
+	width: 300px;
+	padding: 8px;
+	font-size: 18px;
+	color: #747474;
+	border: solid 1px #747474;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+.login input[type=text]:focus, input[type=password]:focus {
+	box-shadow: rgba(194, 195, 196, 0.19) 0px 0px 11px 5px inset;
+	-webkit-box-shadow: rgba(194, 195, 196, 0.19) 0px 0px 11px 5px inset;
+	-moz-box-shadow: rgba(194, 195, 196, 0.19) 0px 0px 11px 5px inset;
+}
+
+.login input[type=submit] {
+	padding: 8px;
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	width: 318px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	background: #3399ff;
+}
+
+}
+.login input[type=submit]:hover, .login input[type=submit]:focus {
+	background: #7fbfff;
 }
 /*---------------------文字に関するCSS---------------*/
-h1{
-	text-align:center;
-	color:#666;
+h1 {
+	text-align: center;
+	color: #666;
 }
-.alert{
-	color:red;
-	text-align:center;
+
+.alert {
+	color: red;
+	text-align: center;
 }
