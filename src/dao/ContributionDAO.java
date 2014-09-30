@@ -33,6 +33,7 @@ public class ContributionDAO {
 			ResultSet rs = stmt.executeQuery(sql);
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy'年'MM'月'dd'日'HH'時'mm'分'");
 			while (rs.next()) {
+				System.out.println(rs.getString("text"));
 				Contribution cont = new Contribution(
 						rs.getInt("con_id"),
 						rs.getString("title"), 

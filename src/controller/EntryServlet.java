@@ -25,6 +25,7 @@ public class EntryServlet extends BaseServlet {
 		boolean result = bo.excute();
 		if (result) {
 			response.sendRedirect("/bbs/home");
+			return ;
 		}
 		request.getRequestDispatcher("jsp/entry.jsp").forward(request, response);
 	}

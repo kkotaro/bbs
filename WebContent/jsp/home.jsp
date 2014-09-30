@@ -173,9 +173,8 @@ $(function(){
 							<th colspan="4" align="center">本文</th>
 						</tr>
 						<tr>
-							<td class="bbs_content" colspan="4"><pre>
-									<% out.print(con.getConText()); %>
-								</pre></td>
+							<td class="bbs_content" colspan="4">
+							<pre><% out.print(con.getConText()); %></pre></td>
 						</tr>
 					</table>
 					<div class="button_align_comment">
@@ -211,7 +210,7 @@ $(function(){
 						Map<Integer, Comment> comments = new LinkedHashMap<>();
 						comments = comm.comment(con.getConId());
 						if (!comments.isEmpty()) {
-					%>
+						%>
 						<div class="comment_list">
 							<% for (Comment com : comments.values()) {%>
 							<table class="comment_table">
