@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+body{
+	margin:0;
+	background:#f7f7f7;
+}
+
+#main{
+	width:860px;
+	margin:100px auto;
+}
+.circle{
+	float:left;
+	width:150px;
+	height:150px;
+	background:#EE6557;
+	color:#fff;
+	text-align:center;
+	font-size:1.9em;
+	border-radius:75px;
+	-webkit-border-radius:75px;
+	-moz-border-radius:75px;
+	line-height:150px;
+}
+
+.content{
+	width:680px;
+	float:left;
+	color:#747474;
+	margin:0px 10px;
+}
+.content p{
+	margin-top:20px;
+	font-size:2em;
+	color:#000;
+}
+.clear{
+	clear:both;
+}
